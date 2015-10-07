@@ -1,0 +1,3 @@
+Explicits, virtuals
+Codestyle
+Singletone
