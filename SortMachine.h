@@ -9,10 +9,10 @@
 
 class SortMachine {
  public:
-  int arrLength;
-  std::vector<int> arr;
+  int arrLength_;
+  std::vector<int> arr_;
 
-  explicit SortMachine() : arrLength(10)
+  explicit SortMachine() : arrLength_(10)
     {}
   ~SortMachine() {}
 
