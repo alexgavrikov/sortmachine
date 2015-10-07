@@ -5,7 +5,7 @@ void SortMachine::run() {
   printUsage();
   std::cout << "Command > ";
   while (std::getline(std::cin, input)) {
-    std::transform(input.begin(), input.end(), input.begin(), ::toupper);
+    std::transform(input.begin(), input.end(), input.begin(), ::tolower);
     if (input.compare(0, 3, "gen") == 0) {
       generate();
     } else if (input.compare(0, 4, "sort") == 0) {
@@ -36,7 +36,7 @@ void SortMachine::sort() {
 
   endTime = std::clock();
   time = static_cast<int>((1000*(endTime - startTime)) / static_cast<double>(CLOCKS_PER_SEC));
-  std::cout << time << std::endl;
+  std::cout << "Sorting time: " << time << std::endl;
 }
 
 void SortMachine::printUsage() {
